@@ -13,3 +13,54 @@
  *= require_tree .
  *= require_self
  */
+@import 'bootstrap';
+
+/* ---HEADER--- */
+header{
+  position: fixed;
+    display: flex;
+    left: 0;
+    top: 0;
+    width: 100%;
+    align-content: center;
+    justify-content: center;
+    list-style-type: none;
+    align-items: baseline;
+
+}
+
+/* ---FOOTER--- */
+.footer{
+  position: fixed;
+    display: flex;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    align-content: center;
+    justify-content: center;
+    list-style-type: none;
+    align-items: baseline;
+}
+
+/* ---LOGOS--- */
+.logo{
+  height: 50px;
+  width: auto;
+}
+
+
+/* ---HOME--- */
+
+/* ---INDEX--- */
+
+/* ---CARDS--- */
+
+/* ---CONTACT--- */
+
+/* ---PROFILE--- */
+
+/* ---LOGIN--- */
+
+/* ---SIGNUP--- */
+
+/* ---APARTMENT--- */
