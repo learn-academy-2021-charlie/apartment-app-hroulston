@@ -30,7 +30,6 @@ class App extends Component {
           sign_in_route={sign_in_route}
           sign_out_route={sign_out_route}
           />
-        <h1>Hello There</h1>
         <Switch>
         <Route exact path ='/' component = {Home}/>
         <Route path ='/apartmentIndex' component = {ApartmentIndex}/>
