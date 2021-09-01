@@ -1,13 +1,20 @@
 import React, {Component} from "react"
 
-class ApartmenetIndex extends Component {
+class ApartmentIndex extends Component {
   render () {
     return (
       <>
-      <h1>Index</h1>
+      <h1>Apartments</h1>
+      {this.props.apartments && this.props.apartments.map(apartment => {
+        return(
+        <p key={apartment.id}>
+        <NavLink to={`/apartmentprofile/${apartment.id}`}>{apartment.street}</NavLink>
+        </p>
+      )
+      })}
       </>
     )
   }
 }
 
-export default ApartmenetIndex
+export default ApartmentIndex
