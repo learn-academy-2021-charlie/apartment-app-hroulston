@@ -7,8 +7,8 @@ Enzyme.configure({ adapter: new Adapter() })
 
 describe("When new apartment page renders", () =>{
   it("displays a heading reading Add a New Apartment", () =>{
-    const index = shallow(<NewApartment/>)
-    const renderedMsg = index.find("h1")
+    const newApt = shallow(<NewApartment/>)
+    const renderedMsg = newApt.find("h1")
     expect(renderedMsg.text()).toEqual("Add a New Apartment")
   })
 })
