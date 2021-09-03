@@ -94,12 +94,15 @@ class App extends Component {
         <Switch>
         <Route exact path ='/' component = {Home}/>
 
-        <Route path ='/apartmentIndex' render={(props) => <ApartmentIndex apartments={this.state.apartments}/>}/>
+        <Route path ='/apartmentIndex' render={(props) => {
+          return<ApartmentIndex apartments={this.state.apartments}/>}
+        }/>
 
-        <Route path ='/apartmentProfile/:id' render={(props) =>{
+        <Route path ='/apartmentProfile/:id' render={(props ) => {
           let id = props.match.params.id
           let apartment = this.state.apartments.find(apartment =>apartment.id === +id)
-          return<ApartmentProfile apartment={apartment} deleteApartment={this.deleteApartment}/>}}/>
+          return < ApartmentProfile apartment={apartment}
+         deleteApartment={this.deleteApartment}/>}}/>
 
         <Route path ='/newApartment' render={(props) => <NewApartment createApartment={this.createApartment}/>}/>
 

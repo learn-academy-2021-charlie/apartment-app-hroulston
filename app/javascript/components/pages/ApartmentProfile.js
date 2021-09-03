@@ -1,9 +1,12 @@
 import React, {Component} from "react"
+import { Button, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
+
 
 class ApartmentProfile extends Component {
   render () {
     return (
       <>
+
       <div className="profile_links">
       <a href="/apartmentIndex">Back To List</a>
       </div>
@@ -28,17 +31,16 @@ class ApartmentProfile extends Component {
         />
       </FormGroup>
       <Button>Submit</Button>
-      // Fix button so it sends an email to the property manager's email
       </div>
-      <h1>{this.props.street}</h1>
-      <h2>{this.props.city}</h2>
-      <h2>{this.props.state}</h2>
-      <h3>{this.props.price}</h3>
-      <p>Bedrooms: {this.props.bedrooms}</p>
-      <p>Bathrooms: {this.props.bathrooms}</p>
-      <p>Pets: {this.props.pets}</p>
-      <p>Property Manager: {this.props.manager}</p>
-      <p>Manager Contact: {this.props.email}</p>
+      <h1>{this.props.apartment.street}</h1>
+      <h2>{this.props.apartment.city}</h2>
+      <h2>{this.props.apartment.state}</h2>
+      <h3>{this.props.apartment.price}</h3>
+      <p>Bedrooms: {this.props.apartment.bedrooms}</p>
+      <p>Bathrooms: {this.props.apartment.bathrooms}</p>
+      <p>Pets: {this.props.apartment.pets}</p>
+      <p>Property Manager: {this.props.apartment.manager}</p>
+      <p>Manager Contact: {this.props.apartment.email}</p>
 
 
       </>
