@@ -18,10 +18,18 @@ class Header extends Component {
           <NavItem>
             <NavLink href="/apartmentIndex">Apartments</NavLink>
           </NavItem>
+          <NavItem>
+            <NavLink href="/">Home</NavLink>
+          </NavItem>
             { logged_in &&
-                <div>
-                  <a href={ sign_out_route }>Sign Out</a>
-                </div>
+                <>
+                  <NavItem>
+                    <NavLink href={ sign_out_route }>Sign Out</NavLink>
+                  </NavItem>
+                  <NavItem>
+                    <NavLink href="/newApartment">Add Apartment</NavLink>
+                  </NavItem>
+                </>
               }
               { !logged_in &&
                 <div>

@@ -15,7 +15,8 @@ class NewApartment extends Component {
             price: "",
             bedrooms: 0,
             bathrooms: 0,
-            pets: ""
+            pets: "",
+            user_id: this.props.current_user.id
           },
           success: false
         }
@@ -23,7 +24,7 @@ class NewApartment extends Component {
 
         handleChange = (e) => {
         let { form } = this.state
-        form[e.target.street] = e.target.value
+        form[e.target.name] = e.target.value
         this.setState({ form: form })
     }
 

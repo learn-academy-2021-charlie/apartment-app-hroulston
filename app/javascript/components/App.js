@@ -104,7 +104,7 @@ class App extends Component {
           return < ApartmentProfile apartment={apartment}
          deleteApartment={this.deleteApartment}/>}}/>
 
-        <Route path ='/newApartment' render={(props) => <NewApartment createApartment={this.createApartment}/>}/>
+        <Route path ='/newApartment' render={(props) => <NewApartment createApartment={this.createApartment} current_user={current_user}/>}/>
 
         <Route path ='/editApartment/:id' render={(props) =>{
           let id = props.match.params.id
