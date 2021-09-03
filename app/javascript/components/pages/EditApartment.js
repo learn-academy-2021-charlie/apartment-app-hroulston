@@ -127,6 +127,7 @@ class EditApartment extends Component {
                 </div>
         </Form>
         { this.state.success && <Redirect to={`/apartmentProfile/${this.props.apartment.id}`} />}
+        </>
     )
   }
 }

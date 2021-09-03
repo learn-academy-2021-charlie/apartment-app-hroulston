@@ -14,32 +14,56 @@
  *= require_self
  */
 @import 'bootstrap';
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+
+
+*{
+  font-family: 'Quicksand', sans-serif;
+  background-color: #C6DFF1ff;
+
+}
+
+body{
+  margin-top: 100px;
+  margin-bottom: 70px;
+  text-align: center;
+
+}
 
 /* ---HEADER--- */
 header{
   position: fixed;
-    display: flex;
-    left: 0;
-    top: 0;
-    width: 100%;
-    align-content: center;
-    justify-content: center;
-    list-style-type: none;
-    align-items: baseline;
+  display: flex;
+  left: 0;
+  top: 0;
+  width: 100%;
+  align-content: center;
+  justify-content: center;
+  list-style-type: none;
+  align-items: baseline;
+}
+
+.login-links{
+  display: flex;
+  align-content: center;
+  justify-content: space-evenly;
+  list-style-type: none;
+  align-items: baseline;
+  flex-direction: row;
 
 }
 
 /* ---FOOTER--- */
 .footer{
   position: fixed;
-    display: flex;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    align-content: center;
-    justify-content: center;
-    list-style-type: none;
-    align-items: baseline;
+  display: flex;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  align-content: center;
+  justify-content: center;
+  list-style-type: none;
+  align-items: baseline;
 }
 
 /* ---LOGOS--- */
@@ -50,6 +74,11 @@ header{
 
 
 /* ---HOME--- */
+.apartment-background {
+  width: 100vw;
+  margin-top: 10px;
+}
+
 
 
 /* ---INDEX--- */

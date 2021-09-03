@@ -15,13 +15,21 @@ class Header extends Component {
     return (
       <>
         <header className="header">
-          <NavItem>
+          <NavItem className="head-links">
             <NavLink href="/apartmentIndex">Apartments</NavLink>
           </NavItem>
+          <NavItem>
+            <NavLink href="/">Home</NavLink>
+          </NavItem>
             { logged_in &&
-                <div>
-                  <a href={ sign_out_route }>Sign Out</a>
-                </div>
+                <>
+                  <NavItem>
+                    <NavLink href={ sign_out_route }>Sign Out</NavLink>
+                  </NavItem>
+                  <NavItem>
+                    <NavLink href="/newApartment">Add Apartment</NavLink>
+                  </NavItem>
+                </>
               }
               { !logged_in &&
                 <div>
