@@ -41,7 +41,7 @@ class NewApartment extends Component {
         <FormGroup>
           <Label for="street">Street</Label>
             <Input
-              className='street'
+              className='newapt'
               type="text"
               name="street"
               onChange={ this.handleChange }
@@ -50,7 +50,7 @@ class NewApartment extends Component {
          <FormGroup>
            <Label for="city">City</Label>
              <Input
-               className='city'
+               className='newapt'
                type="text"
                name="city"
                onChange={ this.handleChange }
@@ -59,7 +59,7 @@ class NewApartment extends Component {
           <FormGroup>
             <Label for="state">State</Label>
               <Input
-                className='state'
+                className='newapt'
                 type="text"
                 name="state"
                 onChange={ this.handleChange }
@@ -68,7 +68,7 @@ class NewApartment extends Component {
            <FormGroup>
              <Label for="manager">Manager</Label>
                <Input
-                 className='manager'
+                 className='newapt'
                  type="text"
                  name="manager"
                  onChange={ this.handleChange }
@@ -77,7 +77,7 @@ class NewApartment extends Component {
             <FormGroup>
               <Label for="email">Manager's Email</Label>
                 <Input
-                  className='email'
+                  className='newapt'
                   type="text"
                   name="email"
                   onChange={ this.handleChange }
@@ -86,7 +86,7 @@ class NewApartment extends Component {
              <FormGroup>
                <Label for="price">Price</Label>
                  <Input
-                   className='price'
+                   className='newapt'
                    type="text"
                    name="price"
                    onChange={ this.handleChange }
@@ -95,7 +95,7 @@ class NewApartment extends Component {
               <FormGroup>
                 <Label for="bedrooms">Bedrooms</Label>
                   <Input
-                    className='bedrooms'
+                    className='newapt'
                     type="text"
                     name="bedrooms"
                     onChange={ this.handleChange }
@@ -104,7 +104,7 @@ class NewApartment extends Component {
                <FormGroup>
                  <Label for="bathrooms">Bathrooms</Label>
                    <Input
-                     className='bathrooms'
+                     className='newapt'
                      type="text"
                      name="bathrooms"
                      onChange={ this.handleChange }
@@ -113,7 +113,7 @@ class NewApartment extends Component {
                 <FormGroup>
                   <Label for="pets">Pets</Label>
                     <Input
-                      className='pets'
+                      className='newapt'
                       type="text"
                       name="pets"
                       onChange={ this.handleChange }
@@ -127,7 +127,7 @@ class NewApartment extends Component {
                   </Button>
                 </div>
         </Form>
-        { this.state.success && <Redirect to="/apartmentindex" />}
+        { this.state.success && <Redirect to="/apartmentIndex" />}
       </>
     )
   }

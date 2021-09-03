@@ -15,7 +15,7 @@ class Header extends Component {
     return (
       <>
         <header className="header">
-          <NavItem>
+          <NavItem className="head-links">
             <NavLink href="/apartmentIndex">Apartments</NavLink>
           </NavItem>
           <NavItem>

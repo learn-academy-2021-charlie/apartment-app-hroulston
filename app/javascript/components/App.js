@@ -38,7 +38,7 @@ class App extends Component {
   createApartment = (newApartment) => {
     console.log(newApartment)
     fetch("/apartments", {
-      body:JSON.stringify(newApartment),
+      body: JSON.stringify(newApartment),
       headers: {
         "Content-Type": "application/json"
       },
