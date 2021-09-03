@@ -12,7 +12,7 @@ class ApartmentProfile extends Component {
       </div>
       <div className="appointment_maker">
       <h3>Book an Appointment!</h3>
-        <FormGroup>
+        <FormGroup className="form">
           <Label for="date">Date</Label>
           <Input
             type="date"
@@ -20,8 +20,8 @@ class ApartmentProfile extends Component {
             id="date"
             placeholder="date placeholder"
           />
-        </FormGroup>
-        <FormGroup>
+        </FormGroup >
+        <FormGroup className="form">
         <Label for="time">Time</Label>
         <Input
           type="time"
@@ -30,12 +30,13 @@ class ApartmentProfile extends Component {
           placeholder="time placeholder"
         />
       </FormGroup>
+      <br />
       <Button>Submit</Button>
+      <br />
       </div>
       <h1>{this.props.apartment.street}</h1>
-      <h2>{this.props.apartment.city}</h2>
-      <h2>{this.props.apartment.state}</h2>
-      <h3>{this.props.apartment.price}</h3>
+      <h2>{this.props.apartment.city}, {this.props.apartment.state}</h2>
+      <h3>${this.props.apartment.price}</h3>
       <p>Bedrooms: {this.props.apartment.bedrooms}</p>
       <p>Bathrooms: {this.props.apartment.bathrooms}</p>
       <p>Pets: {this.props.apartment.pets}</p>

@@ -37,7 +37,7 @@ class NewApartment extends Component {
     return (
       <>
       <h1>Add a New Apartment</h1>
-      <Form>
+      <Form className="form">
         <FormGroup>
           <Label for="street">Street</Label>
             <Input
