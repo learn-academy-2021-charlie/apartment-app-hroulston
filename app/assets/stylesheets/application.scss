@@ -19,7 +19,6 @@
 
 *{
   font-family: 'Quicksand', sans-serif;
-  background-color: #C6DFF1ff;
 
 }
 
@@ -27,12 +26,14 @@ body{
   margin-top: 100px;
   margin-bottom: 70px;
   text-align: center;
+  background-color: #C6DFF1ff;
+
 
 }
 
 /* ---HEADER--- */
 header{
-  position: fixed;
+  position: absolute;
   display: flex;
   left: 0;
   top: 0;
@@ -106,9 +107,19 @@ header{
   justify-content: center;
 }
 /* ---PROFILE--- */
+.cards{
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
 
 /* ---LOGIN--- */
 
 /* ---SIGNUP--- */
 
-/* ---APARTMENT--- */
+/* ---NEWAPARTMENT--- */
+.form {
+  margin-left: 20%;
+  margin-right: 20%;
+}

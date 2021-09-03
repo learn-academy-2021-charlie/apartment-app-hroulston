@@ -6,13 +6,20 @@ class ApartmentsController < ApplicationController
   end
 
   def create
-    apartment = Apartment.create(apartment_params)
+    apartment = current_user.apartments.create(apartment_params)
     if apartment.valid?
       render json: apartment
     else
       render json: apartment.errors, status: 422
     end
   end
+
+  def destroy
+        apartment = current_user.apartment.find(params[:id])
+        apartment.destroy
+        render json: apartment
+    end
+
 
   private
   def apartment_params
