@@ -1,8 +1,20 @@
 import React, {Component} from "react"
 import { Button, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
-
+import { NavLink } from 'react-router-dom'
+import { Redirect } from 'react-router-dom'
 
 class ApartmentProfile extends Component {
+  constructor(props){
+        super(props)
+        this.state = {
+          success: false
+        }
+      }
+
+  handleSubmit = () => {
+    this.props.deleteApartment(this.props.apartment.id)
+    this.setState({ success: true })
+    }
   render () {
     return (
       <>
@@ -42,6 +54,13 @@ class ApartmentProfile extends Component {
       <p>Pets: {this.props.apartment.pets}</p>
       <p>Property Manager: {this.props.apartment.manager}</p>
       <p>Manager Contact: {this.props.apartment.email}</p>
+
+      <NavLink to="/apartmentIndex" >
+        <Button onClick={ this.handleSubmit }>
+          Delete Apartment
+        </Button>
+      </NavLink>
+      { this.state.success && <Redirect to="/apartmentIndex" />}
 
 
       </>
